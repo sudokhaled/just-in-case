@@ -27,24 +27,37 @@ gh repo edit "$R" \
 gh api -X POST "repos/$R/pages" -f build_type=workflow
 gh workflow run pages.yml --repo "$R"
 
-# Private security reports (SECURITY.md links to this form).
-gh api -X PUT "repos/$R/private-vulnerability-reporting"
-
 # Labels used by the issue forms.
 gh label create error-report --repo "$R" --force --color B60205 --description "Something in an article is wrong or dangerous"
 gh label create review       --repo "$R" --force --color 5319E7 --description "Expert review of an article"
 gh label create content      --repo "$R" --force --color 0E8A16 --description "New or changed articles"
 gh label create translation  --repo "$R" --force --color 1D76DB --description "Translating the library"
 gh label create bug          --repo "$R" --force --color D93F0B --description "A device, the website or the build does not work"
+
+# Lock the repository down, then read every protection back from GitHub.
+python3 tools/repo_guard.py apply
+python3 tools/repo_guard.py check
 ```
+
+`repo_guard.py apply` makes sure nobody can change `main` or publish without you:
+
+- Nobody, including you, can force-push or delete `main`.
+- Everyone except you (the admin) must open a pull request that passes the build check and that you approve as code owner.
+- Only you can create, move or delete `v*` release tags.
+- Each release waits for your approval, and the website deploys only from `main`.
+- Workflows get a read-only token unless they ask for more, cannot approve pull requests, and may use only GitHub's actions and the pinned ones in our workflows. Pull requests from outside contributors need your approval before their workflows run.
+- Private vulnerability reporting is on (SECURITY.md links to it).
+
+Run `check` again any time, for example after changing settings or adding a collaborator. It exits with an error if any protection is missing.
+
+Your account is the last line of defense: use two-factor sign-in (a passkey or an authenticator app), and remove old tokens and apps you no longer use at https://github.com/settings/tokens and https://github.com/settings/applications.
 
 Then, in the repository settings on github.com:
 
 1. **Settings > General > Social preview:** upload [`assets/social-preview.png`](assets/social-preview.png). This is the picture shown when someone shares the repo link.
 2. **Settings > Moderation options > Reported content:** allow reports, so people can report conduct problems privately (see [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md)).
-3. **Settings > Rules > Rulesets:** protect `main`. Require a pull request, and require the "Check and build" workflow to pass.
-4. **Discussions:** add a welcome post and pin it, with categories for Q&A, "Show your setup" and Ideas.
-5. **Search engines (optional):** add `https://sudokhaled.github.io/just-in-case/` in [Google Search Console](https://search.google.com/search-console) and submit `sitemap.xml` from that address.
+3. **Discussions:** add a welcome post and pin it, with categories for Q&A, "Show your setup" and Ideas.
+4. **Search engines (optional):** add `https://sudokhaled.github.io/just-in-case/` in [Google Search Console](https://search.google.com/search-console) and submit `sitemap.xml` from that address.
 
 ## Publishing a release
 
@@ -57,7 +70,7 @@ Then, in the repository settings on github.com:
    git push origin main v0.1.0
    ```
 
-4. The "Release" workflow builds every edition, the PDFs, the Kindle file and the ESP32 flash images, and publishes them with `SHA256SUMS.txt`. Versions starting with `v0.` get a "public preview" note at the top of the release notes.
+4. **Approve the release.** The "Release" workflow waits for you: open it in the Actions tab (or the GitHub mobile app), click **Review deployments**, tick **release** and click **Approve and deploy**. It then builds every edition, the PDFs, the Kindle file and the ESP32 flash images, and publishes them with `SHA256SUMS.txt`. Versions starting with `v0.` get a "public preview" note at the top of the release notes.
 5. Check the release page: every file listed in the release notes is there, and the [installer page](https://sudokhaled.github.io/just-in-case/flash/) loads.
 
 Version numbers: stay below 1.0 until the critical (★) articles have been reviewed by experts. Bump the middle number for new articles or editions, and the last number for corrections only.

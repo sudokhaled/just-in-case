@@ -11,6 +11,8 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    # Waits for the owner's approval before anything is built or published (tools/repo_guard.py).
+    environment: release
     env:
       JIC_VERSION: ${{ github.ref_name }}
     steps:
