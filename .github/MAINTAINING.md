@@ -55,9 +55,8 @@ Your account is the last line of defense: use two-factor sign-in (a passkey or a
 Then, in the repository settings on github.com:
 
 1. **Settings > General > Social preview:** upload [`assets/social-preview.png`](assets/social-preview.png). This is the picture shown when someone shares the repo link.
-2. **Settings > Moderation options > Reported content:** allow reports, so people can report conduct problems privately (see [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md)).
-3. **Discussions:** add a welcome post and pin it, with categories for Q&A, "Show your setup" and Ideas.
-4. **Search engines (optional):** add `https://sudokhaled.github.io/just-in-case/` in [Google Search Console](https://search.google.com/search-console) and submit `sitemap.xml` from that address.
+2. **Discussions:** add a welcome post and pin it, with categories for Q&A, "Show your setup" and Ideas.
+3. **Search engines (optional):** add `https://sudokhaled.github.io/just-in-case/` in [Google Search Console](https://search.google.com/search-console) and submit `sitemap.xml` from that address.
 
 ## Publishing a release
 

@@ -20,10 +20,10 @@ This library is for everyone on Earth, of every country, culture, religion, poli
 
 To report a problem privately:
 
-- **A comment, issue, discussion or pull request:** open its **⋯** menu, choose **Report content**, and send the report to the repository admins. Only the maintainers see it.
-- **Anything else, or a problem with a maintainer:** report it to GitHub through the [GitHub abuse form](https://github.com/contact/report-abuse).
+- **A comment, issue, discussion or pull request:** open its **⋯** menu and choose **Report content**. The report goes to GitHub's support team, who can remove content and suspend accounts.
+- **Anything else, including a problem with a maintainer:** use the [GitHub abuse form](https://github.com/contact/report-abuse).
 
-Maintainers will look at every report and keep the reporter's identity private.
+Maintainers also act on what they see in the open: they hide or remove comments, lock conversations and block people who break this code.
 
 ## Enforcement
 
