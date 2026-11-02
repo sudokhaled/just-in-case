@@ -1,0 +1,40 @@
+name: Problem with a device, the website or the build
+description: The hotspot, website, offline app, e-book, a download or the build tool does not work.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: part
+    attributes:
+      label: What does not work?
+      options:
+        - Website or offline app
+        - ESP32 or ESP8266 hotspot, or the browser installer
+        - Raspberry Pi hotspot
+        - Kindle or other e-reader
+        - Printed book, pocket booklet or cards
+        - MP3 player or text file
+        - Build tool (tools/build.py)
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and version
+      description: For example "ESP32-C3 SuperMini, release v0.1.0" or "Kindle Paperwhite, AZW3 from v0.1.0" or "Python 3.11 on Windows 11"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error messages or logs
+      description: Paste any error text, or the serial monitor output from a board.
+      render: text

@@ -75,7 +75,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          cat > notes.md <<'EOF'
+          : > notes.md
+          if [[ "$GITHUB_REF_NAME" == v0.* ]]; then
+            printf '> **Public preview.** Every article is sourced, but most have not yet been checked by an expert. Found an error? [Report it](%s/%s/issues/new?template=error-report.yml).\n\n' \
+              "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" >> notes.md
+          fi
+          cat >> notes.md <<'EOF'
           ## Pick your device
 
           | File | For |

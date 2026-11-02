@@ -1,0 +1,46 @@
+name: Expert review
+description: You are a medic, nurse, doctor, firefighter, engineer, farmer, radio operator or other professional, and you checked an article.
+title: "Review: "
+labels: ["review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Expert review is what turns a careful draft into something people can trust with their lives.
+        You do not need to know GitHub: write what you found here, and a maintainer will make the changes and credit you.
+  - type: input
+    id: article
+    attributes:
+      label: Which article or articles did you review?
+      description: The title, or the file path such as content/en/medical/burns.md
+    validations:
+      required: true
+  - type: input
+    id: qualification
+    attributes:
+      label: Your qualification
+      description: For example "paramedic, 8 years" or "agronomist". It is shown in the pull request that marks the article as reviewed.
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Your verdict
+      options:
+        - Correct as written
+        - Correct after the changes listed below
+        - Has dangerous errors (listed below)
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes needed
+      description: Quote the sentence or number, say what it should be, and give a source if you can.
+  - type: checkboxes
+    id: method
+    attributes:
+      label: How you checked
+      options:
+        - label: I checked every number and instruction against current guidelines or my professional practice.
+          required: true

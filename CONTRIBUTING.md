@@ -60,6 +60,8 @@ Each article has a `reviewed:` field:
 
 When you review, **check every number against its source**, look for missing deadly mistakes, and read it as a frightened beginner would. Any factual change resets the article to `reviewed: no` unless the reviewer re-checks it.
 
+Not used to GitHub? Send your findings with the [expert review form](../../issues/new?template=expert-review.yml), and a maintainer will make the changes and credit you.
+
 ## Translating
 
 The whole system is built for translation. Each language lives in its own folder with identical file names, so translators can work in parallel and the build links everything automatically.

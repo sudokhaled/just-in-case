@@ -1,1 +1,8 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
+contact_links:
+  - name: Question, idea or "here is how I set it up"
+    url: https://github.com/sudokhaled/just-in-case/discussions
+    about: Ask how to use the library, share your setup, or talk through an idea before writing it.
+  - name: Security problem in the firmware, website or build
+    url: https://github.com/sudokhaled/just-in-case/security/advisories/new
+    about: Report it privately. Only the maintainers will see it.
