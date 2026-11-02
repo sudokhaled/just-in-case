@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src=".github/assets/logo.svg" width="88" height="88" alt="">
+
 # Just In Case
 
 **The survival library that still works when nothing else does.**
@@ -9,9 +11,20 @@ water, food, fire, shelter, first aid, sanitation, disasters and rebuilding.
 
 It runs on **paper**, a **Kindle**, an **old phone**, or a **$3 chip on a power bank** that turns into a WiFi library for a whole neighborhood.
 
+[![Check and build](https://github.com/sudokhaled/just-in-case/actions/workflows/build.yml/badge.svg)](https://github.com/sudokhaled/just-in-case/actions/workflows/build.yml)
+[![Latest release](https://img.shields.io/github/v/release/sudokhaled/just-in-case?label=download&color=1e3a2f)](https://github.com/sudokhaled/just-in-case/releases/latest)
+[![Read online](https://img.shields.io/badge/read-online-1e3a2f)](https://sudokhaled.github.io/just-in-case/)
+[![Content: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-lightgrey)](LICENSE-CONTENT.txt)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-lightgrey)](LICENSE)
+
 **[Download](../../releases/latest)** · **[Read it online](https://sudokhaled.github.io/just-in-case/)** · **[What's inside](#whats-inside)** · **[Help write it](CONTRIBUTING.md)**
 
+<img src=".github/assets/screenshots.png" width="760" alt="Three phone screens: searching the library for baby diarrhea; the article Making Water Safe to Drink, opening with a red DANGER box; and the CPR article in dark mode with a numbered drawing of chest compressions.">
+
 </div>
+
+> [!NOTE]
+> **Version 0.1 is a public preview.** Every article is sourced, but most have not yet been checked by an expert. Doctors, nurses, medics, engineers and farmers: [your review](#help-write-it) is the most valuable help you can give.
 
 ---
 
@@ -33,7 +46,7 @@ This library holds those answers **before** you need them. It is written for a f
 | 🔌 An ESP32 board ($2–8) | Turn it into a WiFi library hotspot for everyone nearby: plug it into a computer and click **[Install](https://sudokhaled.github.io/just-in-case/flash/)**. No programming. [ESP32 guide](hardware/esp32/) | 1.5–3 days on a 10,000 mAh power bank |
 | 🍓 A Raspberry Pi | The same hotspot, and it can rebuild the library itself. [Pi guide](hardware/raspberry-pi/) | 1–2 days (Pi Zero 2 W) |
 
-Then **share it**. Send the file to your family group chat. Give a printed copy to your neighbor. In a disaster, the people around you matter most.
+Then **share it**. Send the file to your family group chat. Give a printed copy to your neighbor. In a disaster, the people around you matter most. And ⭐ **star this repo** so more people find it before they need it.
 
 ## The $3 library hotspot
 
@@ -84,6 +97,26 @@ Every article follows the same pattern: **the deadly mistakes first, then quick 
 5. **Free forever.** Content is [CC BY-SA 4.0](LICENSE-CONTENT.txt), code is [MIT](LICENSE). Print it, translate it, sell copies, put it on your own devices. Just keep it open.
 6. **Tiny.** The whole library is smaller than one phone photo.
 
+## Questions
+
+**Why not just download Wikipedia?**
+Do that too: [Kiwix](https://kiwix.org/) puts all of Wikipedia on a phone. But it takes tens of gigabytes, needs an app, and explains things rather than walking a frightened person through them. This library is about 1 MB, opens on anything, puts the deadly mistakes first and gives exact numbers. The two work well together.
+
+**Can I trust it?**
+Every number has a source, listed at the end of its article, mostly from the WHO, IFRC, CDC and similar bodies. But mistakes are possible, and most articles have not yet been reviewed by an expert. Each article shows its review status. When real help exists, use it.
+
+**Does it need the internet, or track me?**
+No. Once you have a file, it never connects to anything. There are no ads, accounts, analytics or downloaded fonts. The website works offline after your first visit.
+
+**Can I print it, share it, translate it or sell copies?**
+Yes. The content is CC BY-SA 4.0: credit "Just In Case contributors" and keep your version under the same license.
+
+**How many people can one $3 hotspot serve?**
+Up to 8 phones at a time, within normal WiFi range. Each visitor can save the whole library (under 500 KB to transfer) and leave, making room for the next. [Hotspot settings](hardware/esp32/).
+
+**Which languages?**
+English for now. The build is ready for translations, and each language gets every edition automatically. [Help translate](CONTRIBUTING.md#translating).
+
 ## Build it yourself
 
 You need Python 3.8 or newer and nothing else: no packages, no internet. It works on Windows, macOS, Linux and a Raspberry Pi.
@@ -113,7 +146,7 @@ The build makes these files (sizes from the last build):
 | Paper: the whole library as an A4 book with page numbers and an index (make the PDF with weasyprint) | `just-in-case-book.html` | 105 articles in full, with drawings | 1585 KB |
 | Paper: the critical articles as an A4 book | `just-in-case-core-book.html` | 27 articles in full, with drawings | 407 KB |
 | Paper: an A6 pocket booklet of every article's warnings and quick steps | `just-in-case-pocket.html` | 105 as warnings and quick steps only | 211 KB |
-| Raspberry Pi hotspot; any web server; the website, installable as an offline app | `dist/site/` (website) | 105 articles in full, with drawings | 5428 KB |
+| Raspberry Pi hotspot; any web server; the website, installable as an offline app | `dist/site/` (website) | 105 articles in full, with drawings | 5750 KB |
 | ESP32 boards with 4 MB flash (the browser installer uses this) | `hardware/esp32/JustInCase/data/` | 105 articles in full, with drawings | 1540 KB |
 | Small boards with about 0.5 MB of file space, such as an ESP8266 with 1 MB flash (ESP-01) | `dist/esp-small/` | 27 articles in full, 78 as warnings and quick steps only | 432 KB |
 <!-- END DEVICES -->
@@ -132,16 +165,16 @@ python3 tools/build.py --readme             # refresh the tables in this README
 This library will only be as good as the people who check it. You can help even if you've never used GitHub:
 
 - **Found a mistake?** [Report it](../../issues/new?template=error-report.yml). A wrong number here could cost a life, so error reports are the most valuable contribution.
-- **Medic, nurse, doctor, engineer, farmer, firefighter, soldier, ham radio operator?** Review the articles in your field. Reviewed articles get marked as reviewed.
+- **Medic, nurse, doctor, engineer, farmer, firefighter, soldier, ham radio operator?** Review the articles in your field and [send what you find](../../issues/new?template=expert-review.yml). No GitHub skills needed. Reviewed articles are marked as reviewed, with credit to you.
 - **Speak another language?** Translations are the fastest way to reach the people who need this most. [How to translate](CONTRIBUTING.md#translating).
 - **Writer?** Pick a 📝 topic from the [roadmap](ROADMAP.md) and follow the [style guide](STYLE_GUIDE.md).
-- **Maker?** Build a reader for e-paper, Pico W or LoRa: see the [device guide](hardware/).
+- **Maker?** Test the hotspot on your board and [share how it went](../../discussions), or build a reader for e-paper, Pico W or LoRa: see the [device guide](hardware/).
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Disclaimer
 
-This library is not a substitute for trained medical, rescue or emergency help. When help exists, use it. When it doesn't, this is the best knowledge we have, checked against the sources listed in each article. Most articles are still drafts awaiting expert review: each one shows its review status. Read the full [disclaimer](DISCLAIMER.md).
+This library is not a substitute for trained medical, rescue or emergency help. When help exists, use it. When it doesn't, this is the best knowledge we have, checked against the sources listed in each article. Most articles are still drafts awaiting expert review: each one shows its review status. Just In Case is independent, and is not affiliated with or endorsed by any organization it cites. Read the full [disclaimer](DISCLAIMER.md).
 
 ## License
 
