@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-python@v7
         with:
@@ -43,11 +43,18 @@ jobs:
       matrix:
         fqbn: [esp32:esp32:esp32, esp32:esp32:esp32c3, esp8266:esp8266:d1_mini]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: arduino/setup-arduino-cli@81d310742121c928ea9c8bbd407b4217b432ae02 # v2.0.0
-        with:
-          version: "1.5.1"
+      # Arduino CLI straight from its release, checked against the published checksum
+      # (1.5.1-checksums.txt). Update the version and hash in all three workflows together.
+      - name: Install Arduino CLI 1.5.1
+        run: |
+          curl -fsSL -o "$RUNNER_TEMP/arduino-cli.tar.gz" \
+            https://github.com/arduino/arduino-cli/releases/download/v1.5.1/arduino-cli_1.5.1_Linux_64bit.tar.gz
+          echo "28a8e119c498a25607821c36cb2dc49e8463941b261a0d99091baa7bc692dd2b  $RUNNER_TEMP/arduino-cli.tar.gz" | sha256sum -c -
+          mkdir -p "$HOME/bin"
+          tar -xzf "$RUNNER_TEMP/arduino-cli.tar.gz" -C "$HOME/bin" arduino-cli
+          echo "$HOME/bin" >> "$GITHUB_PATH"
 
       - name: Install board package
         run: |
