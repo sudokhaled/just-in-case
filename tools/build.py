@@ -653,10 +653,11 @@ APP_HEAD = ('<link rel="manifest" href="manifest.webmanifest">\n<meta name="them
             '<link rel="icon" href="icon.svg" type="image/svg+xml">\n<link rel="apple-touch-icon" href="icon-192.png">')
 
 
-def html_page(lang, direction, title, body, css=None, css_href=None, script=None, script_src=None, app=False):
+def html_page(lang, direction, title, body, css=None, css_href=None, script=None, script_src=None, app=False,
+              meta=()):
     head = ['<meta charset="utf-8">',
             '<meta name="viewport" content="width=device-width, initial-scale=1">',
-            "<title>%s</title>" % escape(title), APP_HEAD if app else FAVICON]
+            "<title>%s</title>" % escape(title)] + list(meta) + [APP_HEAD if app else FAVICON]
     if css:
         head.append("<style>%s</style>" % css)
     if css_href:
@@ -670,6 +671,29 @@ def html_page(lang, direction, title, body, css=None, css_href=None, script=None
         tail += '<script src="app.js"></script>\n'
     return '<!DOCTYPE html>\n<html lang="%s" dir="%s">\n<head>\n%s\n</head>\n<body>\n%s\n%s</body>\n</html>\n' % (
         lang, direction, "\n".join(head), body, tail)
+
+
+def share_meta(page_url, title, summary, image, kind="article"):
+    """Link previews for chat apps and social media, and the page's address for search engines."""
+    card = "summary" if image.endswith("icon-512.png") else "summary_large_image"
+    return ['<meta name="description" content="%s">' % escape(summary),
+            '<link rel="canonical" href="%s">' % escape(page_url),
+            '<meta property="og:type" content="%s">' % kind,
+            '<meta property="og:title" content="%s">' % escape(title),
+            '<meta property="og:description" content="%s">' % escape(summary),
+            '<meta property="og:url" content="%s">' % escape(page_url),
+            '<meta property="og:image" content="%s">' % escape(image),
+            '<meta name="twitter:card" content="%s">' % card]
+
+
+def sitemap_xml(base, pages):
+    """pages: (file name, YYYY-MM-DD or "") pairs. The home page is listed as the bare address."""
+    rows = []
+    for name, updated in pages:
+        loc = base if name == "index.html" else base + name
+        rows.append("<url><loc>%s</loc>%s</url>" % (escape(loc), "<lastmod>%s</lastmod>" % updated if updated else ""))
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s\n</urlset>\n' % "\n".join(rows))
 
 
 def search_box(s):
@@ -960,18 +984,31 @@ def write_app_files(ed, outdir, skip):
     (outdir / "sw.js").write_text(SW_JS % (version, json.dumps(["./"] + files)) + "\n", encoding="utf-8")
 
 
-def build_site(ed, outdir, downloads, languages, pages="article"):
+def build_site(ed, outdir, downloads, languages, pages="article", url="", preview=None):
     """The multi-page website. pages="category" puts each topic on one page: far fewer
-    files, which matters on tiny file systems that use a whole block per file."""
+    files, which matters on tiny file systems that use a whole block per file.
+
+    url is the site's public address. With it, pages get link previews and search
+    engines get a sitemap. preview is the image those link previews show."""
     s = ed.s
     lang = ed.lib.lang
     direction = s.get("direction", "ltr")
     by_category = pages == "category"
+    base = (url if lang == "en" else url + lang + "/") if url else ""
 
     def url_for(a):
         return "c-%s.html#%s" % (a.category, a.id) if by_category else a.id + ".html"
 
     outdir.mkdir(parents=True, exist_ok=True)
+    web_only = set()  # files for the public website that offline copies do not need
+    if base:
+        if preview:
+            shutil.copy2(preview, outdir / preview.name)
+            web_only.add(preview.name)
+        image = base + (preview.name if preview else "icon-512.png")
+
+    def meta(name, title, summary, kind="article"):
+        return share_meta(base + ("" if name == "index.html" else name), title, summary, image, kind) if base else ()
     (outdir / "style.css").write_text(CSS + "\n" + CARDS_CSS + "\n", encoding="utf-8")
     (outdir / "search.js").write_text(SEARCH_SITE_JS + "\n", encoding="utf-8")
 
@@ -1011,7 +1048,8 @@ def build_site(ed, outdir, downloads, languages, pages="article"):
     if ed.lib.cards:
         (outdir / "cards.html").write_text(build_cards_page(ed, standalone=False, url_for=url_for), encoding="utf-8")
     (outdir / "index.html").write_text(
-        html_page(lang, direction, ed.title, "\n".join(body), css_href="style.css", script_src="search.js", app=True),
+        html_page(lang, direction, ed.title, "\n".join(body), css_href="style.css", script_src="search.js", app=True,
+                  meta=meta("index.html", ed.title, s["tagline"], "website")),
         encoding="utf-8")
 
     def pager(prev, nxt):
@@ -1036,7 +1074,7 @@ def build_site(ed, outdir, downloads, languages, pages="article"):
             parts += [pager(prev, nxt), "</main>", footer]
             (outdir / ("c-%s.html" % cat)).write_text(
                 html_page(lang, direction, "%s - %s" % (title, s["library_name"]), "\n".join(parts),
-                          css_href="style.css", app=True), encoding="utf-8")
+                          css_href="style.css", app=True, meta=meta("c-%s.html" % cat, title, desc)), encoding="utf-8")
     else:
         seq = ed.articles
         for n, a in enumerate(seq):
@@ -1050,9 +1088,18 @@ def build_site(ed, outdir, downloads, languages, pages="article"):
                               "</article>", pager(prev, nxt), "</main>", footer])
             (outdir / (a.id + ".html")).write_text(
                 html_page(lang, direction, "%s - %s" % (a.title, s["library_name"]), page, css_href="style.css",
-                          app=True), encoding="utf-8")
+                          app=True, meta=meta(a.id + ".html", a.title, a.summary)), encoding="utf-8")
     (outdir / "devices.html").write_text(build_devices_page(ed.lib, [], set()), encoding="utf-8")
-    write_app_files(ed, outdir, {name for name, _ in downloads})
+    if base:
+        listed = [("index.html", ed.date)]
+        if by_category:
+            listed += [("c-%s.html" % g[0], max(a.updated for a in g[3])) for g in ed.groups]
+        else:
+            listed += [(a.id + ".html", a.updated) for a in ed.articles]
+        listed += [("cards.html", "")] if ed.lib.cards else []
+        (outdir / "sitemap.xml").write_text(sitemap_xml(base, listed + [("devices.html", "")]), encoding="utf-8")
+        web_only.add("sitemap.xml")
+    write_app_files(ed, outdir, {name for name, _ in downloads} | web_only)
 
 
 # ---- EPUB (Kobo, PocketBook, phones; converted to AZW3 for Kindle) ---------
@@ -1368,7 +1415,7 @@ def read_editions(path=EDITIONS):
              "drawings": c.getboolean("drawings", True), "budget": c.getint("budget", 0),
              "shrink": [x.strip() for x in c.get("shrink", "").split(",") if x.strip()],
              "pages": c.get("pages", "article"), "download": c.get("download", "full"),
-             "dest": c.get("dest", "")}
+             "dest": c.get("dest", ""), "url": c.get("url", "").strip(), "preview": c.get("preview", "").strip()}
         problems = []
         if e["format"] not in FORMATS:
             problems.append("format must be one of: " + ", ".join(FORMATS))
@@ -1380,6 +1427,10 @@ def read_editions(path=EDITIONS):
             problems.append("download must be full, core, nano or none")
         if e["format"] == "esp" and not e["dest"]:
             problems.append("esp editions need a dest folder")
+        if e["url"] and not re.match(r"https?://[^\s/]+(/\S*)?/$", e["url"]):
+            problems.append("url must be a full address ending in /, like https://example.org/library/")
+        if e["preview"] and not (ROOT / e["preview"]).is_file():
+            problems.append("preview image %s does not exist" % e["preview"])
         if problems:
             raise BuildError("%s [%s]: %s" % (path.name, name, "; ".join(problems)))
         editions.append(e)
@@ -1433,7 +1484,8 @@ def write_edition(e, lib, ed, download, repo, width, offered, languages):
             for f in path.iterdir():
                 if f.is_file():
                     f.unlink()
-        build_site(ed, path, [(f.name, label) for f, label in offered], languages, e["pages"])
+        build_site(ed, path, [(f.name, label) for f, label in offered], languages, e["pages"], e["url"],
+                   ROOT / e["preview"] if e["preview"] else None)
         for f, _ in offered:
             shutil.copy2(f, path / f.name)
         # Only this language's own files: not the installer images or other languages in subfolders.

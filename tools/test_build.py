@@ -130,6 +130,24 @@ class BuildTests(unittest.TestCase):
                 for href in re.findall(r'href="([^"#:]+\.html)', page.read_text(encoding="utf-8")):
                     self.assertIn(href, pages, "%s links to missing %s" % (page.name, href))
 
+    def test_link_previews_and_sitemap(self):
+        url = "https://example.org/jic/"
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp)
+            build.build_site(self.full, out, [], ["en"], url=url)
+            page = (out / "burns.html").read_text(encoding="utf-8")
+            self.assertIn('<link rel="canonical" href="%sburns.html">' % url, page)
+            self.assertIn('<meta property="og:image" content="%sicon-512.png">' % url, page)
+            sitemap = ET.fromstring((out / "sitemap.xml").read_bytes())
+            locs = [e.text for e in sitemap.iter("{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
+            self.assertEqual(locs[0], url)
+            for loc in locs[1:]:
+                self.assertTrue((out / loc[len(url):]).is_file(), loc)
+            self.assertNotIn("sitemap.xml", json_list((out / "sw.js").read_text()))
+        with tempfile.TemporaryDirectory() as tmp:  # offline copies carry no web addresses
+            build.build_site(self.full, Path(tmp), [], ["en"])
+            self.assertNotIn("og:", (Path(tmp) / "burns.html").read_text(encoding="utf-8"))
+            self.assertFalse((Path(tmp) / "sitemap.xml").exists())
 
 
 class EditionTests(unittest.TestCase):
@@ -176,10 +194,10 @@ class EditionTests(unittest.TestCase):
     def test_bad_editions_file_is_refused(self):
         with tempfile.TemporaryDirectory() as tmp:
             bad = Path(tmp) / "editions.ini"
-            bad.write_text("[x]\nformat = floppy\ncritical = tiny\nshrink = everything\n")
+            bad.write_text("[x]\nformat = floppy\ncritical = tiny\nshrink = everything\nurl = example.org\n")
             with self.assertRaises(build.BuildError) as err:
                 build.read_editions(bad)
-            for word in ("format", "critical", "everything"):
+            for word in ("format", "critical", "everything", "url"):
                 self.assertIn(word, str(err.exception))
 
     def test_budget_shrinks_in_order_then_refuses(self):
