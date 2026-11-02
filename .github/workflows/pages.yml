@@ -39,9 +39,9 @@ jobs:
           path: ~/.arduino15
           key: arduino-esp32-3.3.12
 
-      - uses: arduino/setup-arduino-cli@v2
+      - uses: arduino/setup-arduino-cli@81d310742121c928ea9c8bbd407b4217b432ae02 # v2.0.0
         with:
-          version: "1.x"
+          version: "1.5.1"
 
       - name: Install the ESP32 board package
         run: |
