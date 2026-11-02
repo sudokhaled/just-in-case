@@ -1,0 +1,19 @@
+# Categories, in reading order.
+# Format: id | Title | Short description
+# Translators: translate the Title and Short description, never the id.
+start | Start Here | What to do first, what kills first, how to keep your head
+water | Water | Find it, make it safe, store it
+fire | Fire and Cooking | Make fire, cook with little fuel, avoid smoke and fumes
+shelter | Shelter and Climate | Stay warm, stay cool, stay dry
+land | Living on the Land | Forest, jungle, desert, coast and river: water, shelter, food and dangers
+food | Food | Ration, keep safe, preserve, forage, fish, trap
+farming | Growing Food | Seeds, soil, water and crops, from 3-day sprouts to a year of calories
+medical | First Aid and Medicine | When there is no doctor
+hygiene | Hygiene and Sanitation | Stop the diseases that kill after disasters
+disasters | Disasters | Earthquake, flood, storm, fire, radiation, outbreak
+navigation | Navigation and Rescue | Find your way, get found
+comms | Communication | Radio, codes and messages without internet
+power | Power and Light | Electricity and light without the grid
+skills | Tools and Skills | Knots, tools, repairs, crafts
+community | People and Community | Children, elders, groups, safety, mental health
+reference | Reference | Checklists, plans, tables

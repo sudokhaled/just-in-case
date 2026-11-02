@@ -1,0 +1,10 @@
+# Built editions (published as release downloads, never committed)
+dist/
+hardware/esp32/JustInCase/data/
+
+# Tooling
+__pycache__/
+*.pyc
+.pio/
+.vscode/
+.DS_Store

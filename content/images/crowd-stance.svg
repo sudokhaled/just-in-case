@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="250" viewBox="0 0 500 250" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="250" rx="12" fill="#ffffff" stroke="none"/>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M10 222 H236"/>
+<path d="M250 14 V236" stroke-dasharray="4 5"/>
+</g>
+<g class="muted" stroke="#666666">
+<path stroke-width="24" d="M26 56 L26 56.1 M98 40 L98 40.1 M70 52 L70 52.1 M200 52 L200 52.1 M232 58 L232 58.1"/>
+<path stroke-width="14" d="M26 78 L24 140 M68 74 L64 146 M64 146 L58 214 M64 146 L74 214 M70 82 L92 110 L116 100 M198 74 L200 146 M200 146 L192 214 M200 146 L210 214 M198 84 L218 114 L234 108"/>
+</g>
+<circle cx="134" cy="50" r="12" fill="currentColor" stroke="none"/>
+<path stroke-width="14" d="M130 72 L126 146 M126 146 L118 214 M126 146 L136 214"/>
+<path stroke-width="11" d="M132 80 L152 112 L162 74"/>
+<circle cx="338" cy="96" r="17" fill="currentColor" stroke="none"/>
+<path stroke-width="16" d="M356 114 Q420 142 398 210"/>
+<path stroke-width="15" d="M398 210 L326 156 L360 214"/>
+<path stroke-width="11" d="M360 124 L306 128"/>
+<path class="bg" fill="#ffffff" stroke="none" d="M319.3 89.6 L351.1 78.3 L344.7 60.4 L312.9 71.7Z"/>
+<path stroke-width="11" d="M306 128 L318 80 L346 70"/>
+<g stroke-width="2.5">
+<circle cx="180" cy="34" r="14"/>
+<circle cx="452" cy="124" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="180" y="40">1</text>
+<text x="452" y="130">2</text>
+</g>
+</svg>

@@ -1,0 +1,102 @@
+# Push a tag like v1.0.0 to publish every edition as release downloads.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      JIC_VERSION: ${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Check and build
+        run: |
+          python3 tools/build.py --check
+          python3 tools/build.py
+
+      - name: Printed book editions (PDF with page numbers and index)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libpango-1.0-0 libpangoft2-1.0-0 fonts-dejavu-core
+          python3 -m pip install --quiet weasyprint==70.0
+          weasyprint dist/just-in-case-book.html dist/just-in-case.pdf
+          weasyprint dist/just-in-case-core-book.html dist/just-in-case-core.pdf
+          weasyprint dist/just-in-case-pocket.html dist/just-in-case-pocket.pdf
+
+      - name: Pocket cards (PDF)
+        run: |
+          google-chrome --headless=new --no-sandbox --disable-gpu --no-pdf-header-footer \
+            --print-to-pdf=dist/just-in-case-cards.pdf "file://$PWD/dist/just-in-case-cards.html"
+
+      - name: Kindle edition (AZW3)
+        continue-on-error: true
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: |
+          sudo apt-get install -y --no-install-recommends calibre
+          ebook-convert dist/just-in-case.epub dist/just-in-case.azw3 --title "Just In Case"
+
+      - name: ESP32 flash images
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR="$HOME/bin" sh
+          export PATH="$HOME/bin:$PATH"
+          arduino-cli config init --overwrite
+          arduino-cli config add board_manager.additional_urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          arduino-cli core update-index
+          arduino-cli core install esp32:esp32@3.3.12
+          python3 hardware/esp32/build_firmware.py dist/flash
+          mv dist/flash/just-in-case-esp32*.bin dist/
+
+      - name: Package
+        run: |
+          (cd dist && zip -qr -9 just-in-case-site.zip site)
+          (cd dist && zip -qr -9 just-in-case-mp3.zip mp3)
+          (cd dist/esp-small && zip -qr -9 ../just-in-case-esp-small-data.zip .)
+          (cd hardware/esp32 && zip -qr -9 ../../dist/just-in-case-esp32-arduino.zip JustInCase platformio.ini README.md)
+          cd dist
+          ls -1 just-in-case*.html just-in-case*.pdf just-in-case*.epub just-in-case*.azw3 just-in-case*.txt just-in-case*.zip just-in-case*.bin 2>/dev/null \
+            | grep -v -- "-book" | grep -v -- "-pocket.html" > files.txt
+          sha256sum $(cat files.txt) > SHA256SUMS.txt
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cat > notes.md <<'EOF'
+          ## Pick your device
+
+          | File | For |
+          |---|---|
+          | `just-in-case.html` | **Any phone or computer.** One file, opens in any browser, offline search. |
+          | `just-in-case-core.pdf` | **Print this first.** Critical articles only, with page numbers and an index. |
+          | `just-in-case-cards.pdf` | **Pocket cards.** Print, cut out, laminate. |
+          | `just-in-case-pocket.pdf` | **Pocket booklet** (A6): every article's warnings and quick steps. |
+          | `just-in-case.pdf` | The whole library as a printable book. |
+          | `just-in-case.azw3` | Kindle (copy into the "documents" folder over USB). |
+          | `just-in-case.epub` | Kobo, PocketBook, other e-readers, phone book apps. |
+          | `just-in-case.txt` | Plain text for anything that shows text. |
+          | `just-in-case-core.txt` | Pure ASCII, critical articles in full, for tiny screens. |
+          | `just-in-case-mp3.txt`, `just-in-case-mp3.zip` | **MP3 players and old phones:** every article's warnings and quick steps in pure ASCII; the zip has one small file per topic. |
+          | `just-in-case-esp32*.bin` | Complete flash images for ESP32, ESP32-C3 and ESP32-S3 hotspots. Easiest: use the installer page on the website. |
+          | `just-in-case-esp32-arduino.zip` | Arduino sketch and library files for 4 MB boards. |
+          | `just-in-case-esp-small-data.zip` | Library files for small boards (about 0.5 MB of space, such as ESP-01): copy into the sketch's data folder. |
+          | `just-in-case-site.zip` | Multi-page website for a Raspberry Pi or any web server. |
+
+          Not sure which file? The website has a "Which file for my device?" page.
+
+          Check downloads with `SHA256SUMS.txt`. Then copy them to every device you own. Share them.
+          EOF
+          gh release create "$GITHUB_REF_NAME" --title "Just In Case $GITHUB_REF_NAME" \
+            --notes-file notes.md --generate-notes \
+            $(sed 's|^|dist/|' dist/files.txt) dist/SHA256SUMS.txt

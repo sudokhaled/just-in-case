@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="210" viewBox="0 0 500 210" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="210" rx="12" fill="#ffffff" stroke="none"/>
+<g transform="translate(30 0)">
+<g class="bg" fill="#ffffff">
+<rect x="52" y="28" width="20" height="12" rx="2"/>
+<path d="M54 40 L54 50 Q36 56 36 74 L36 172 Q36 180 44 180 L80 180 Q88 180 88 172 L88 74 Q88 56 70 50 L70 40 Z"/>
+<rect x="36" y="104" width="52" height="34"/>
+</g>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M40 66 Q47 62 54 66 Q61 70 68 66 Q75 62 84 66"/>
+</g>
+<g stroke-width="5">
+<path d="M104 112 L124 112 M114 102 L114 122"/>
+<path d="M342 112 L362 112 M352 102 L352 122"/>
+</g>
+<g class="bg" fill="#ffffff">
+<ellipse cx="148" cy="96" rx="13" ry="18"/>
+<ellipse cx="182" cy="96" rx="13" ry="18"/>
+<ellipse cx="216" cy="96" rx="13" ry="18"/>
+<ellipse cx="250" cy="96" rx="13" ry="18"/>
+<ellipse cx="284" cy="96" rx="13" ry="18"/>
+<ellipse cx="318" cy="96" rx="13" ry="18"/>
+<ellipse cx="390" cy="96" rx="13" ry="18"/>
+</g>
+<g stroke-width="5">
+<path d="M148 114 L148 164 M182 114 L182 164 M216 114 L216 164 M250 114 L250 164 M284 114 L284 164 M318 114 L318 164 M390 114 L390 164"/>
+</g>
+<g fill="currentColor" stroke="none">
+<ellipse cx="148" cy="96" rx="9" ry="14"/>
+<ellipse cx="182" cy="96" rx="9" ry="14"/>
+<ellipse cx="216" cy="96" rx="9" ry="14"/>
+<ellipse cx="250" cy="96" rx="9" ry="14"/>
+<ellipse cx="284" cy="96" rx="9" ry="14"/>
+<ellipse cx="318" cy="96" rx="9" ry="14"/>
+<path d="M390 82 A9 14 0 0 0 390 110 Z"/>
+</g>
+<g class="bg" fill="#ffffff" stroke-width="2.5">
+<path d="M219 22 L233 30 L219 38 L205 30 Z M205 30 L219 38 L219 54 L205 46 Z M219 38 L233 30 L233 46 L219 54 Z"/>
+<path d="M247 22 L261 30 L247 38 L233 30 Z M233 30 L247 38 L247 54 L233 46 Z M247 38 L261 30 L261 46 L247 54 Z"/>
+<path d="M378 34 Q378 18 390 16 Q402 18 402 34 Z"/>
+<path d="M378 34 L402 34 L405 64 L375 64 Z"/>
+</g>
+<g fill="currentColor" stroke="none">
+<circle cx="385" cy="27" r="1.8"/>
+<circle cx="390" cy="23" r="1.8"/>
+<circle cx="395" cy="27" r="1.8"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="62" y="127">1 L</text>
+<text x="233" y="196">6</text>
+</g>
+<text class="accent-fill" x="390" y="196" fill="#b00020" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">1/2</text>
+</g>
+</svg>

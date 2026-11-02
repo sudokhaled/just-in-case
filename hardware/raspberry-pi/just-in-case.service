@@ -1,0 +1,16 @@
+[Unit]
+Description=Just In Case offline library web server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 @REPO@/hardware/raspberry-pi/serve.py --dir @REPO@/dist/site --port 80
+Restart=always
+RestartSec=5
+User=@USER@
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+ProtectSystem=strict
+ProtectHome=read-only
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=multi-user.target

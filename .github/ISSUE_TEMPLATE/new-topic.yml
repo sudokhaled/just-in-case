@@ -1,0 +1,29 @@
+name: Suggest or claim a topic
+description: Propose a new article, or say you will write one from the roadmap.
+title: "Topic: "
+labels: ["content"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      description: For a roadmap topic, use its id, for example dig-a-well
+    validations:
+      required: true
+  - type: dropdown
+    id: action
+    attributes:
+      label: What do you want to do?
+      options:
+        - I will write this article
+        - I suggest someone writes it
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does someone without internet need this?
+  - type: textarea
+    id: sources
+    attributes:
+      label: Main sources you plan to use

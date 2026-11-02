@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="340" viewBox="0 0 500 340" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="340" rx="12" fill="#ffffff" stroke="none"/>
+<rect class="accent-fill" x="24" y="80" width="322" height="22" fill="#b00020" stroke="none"/>
+<path stroke-width="2" d="M350 80 L346 86 M358 80 L346 98 M366 80 L350 102 M374 80 L358 102 M374 90 L366 102"/>
+<rect x="24" y="56" width="448" height="46" rx="3"/>
+<path stroke-width="2" d="M52 56 v8 M80 56 v8 M108 56 v8 M136 56 v8 M164 56 v14 M192 56 v8 M220 56 v8 M248 56 v8 M276 56 v8 M304 56 v14 M332 56 v8 M360 56 v8 M388 56 v8 M416 56 v8 M444 56 v14"/>
+<path stroke-width="4" d="M346 48 L346 110 M374 48 L374 110"/>
+<circle cx="218" cy="156" r="24"/>
+<path d="M210 180 L210 192 M226 180 L226 192"/>
+<path d="M186 326 L188 216 Q190 196 210 194 L226 194 Q246 196 248 216 L250 326"/>
+<path d="M192 198 Q166 202 160 234 L156 326 M182 246 L178 326"/>
+<path d="M244 198 Q270 202 276 234 L280 326 M254 246 L258 326"/>
+<rect class="bg" x="252" y="225" width="28" height="20" fill="#ffffff" stroke="none"/>
+<path d="M253 226 Q265 231 278 226 L279 242 Q266 247 254 242 Z"/>
+<path stroke-width="2.5" d="M263 229 L263 244"/>
+<path stroke-width="2" d="M344 200 L358 200 M344 268 L358 268 M351 200 L351 268 M345 234 L357 234 M347 214 L355 220 M347 248 L355 254"/>
+<path class="muted" stroke="#666666" stroke-width="2" stroke-dasharray="3 4" d="M266 200 L340 200 M282 268 L340 268"/>
+<g stroke-width="2.5">
+<circle cx="185" cy="30" r="14"/>
+<circle cx="360" cy="30" r="14"/>
+<circle cx="440" cy="30" r="14"/>
+<circle cx="306" cy="234" r="14"/>
+<circle cx="384" cy="234" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="185" y="36">1</text>
+<text x="360" y="36">2</text>
+<text x="440" y="36">3</text>
+<text x="306" y="240">4</text>
+<text x="384" y="240">5</text>
+</g>
+</svg>

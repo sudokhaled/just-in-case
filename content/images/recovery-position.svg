@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="200" rx="12" fill="#ffffff" stroke="none"/>
+<g transform="translate(0 -84)">
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M44 140 L466 140 L492 252 L12 252 Z"/>
+</g>
+<g class="bg" fill="#ffffff">
+<rect x="248" y="178" width="214" height="32" rx="16" transform="rotate(0.6 264 194)"/>
+<path d="M116 212 L116 146 Q116 118 146 118 Q178 120 194 140 Q208 152 226 142 Q246 130 264 134 Q290 142 288 212 Z"/>
+<rect x="88" y="164" width="48.1" height="24" rx="12" transform="rotate(-4.8 100 176)"/>
+<circle cx="76" cy="180" r="28"/>
+<rect x="42" y="204" width="70" height="12" rx="6" transform="rotate(2 48 210)"/>
+<rect x="236" y="126" width="105.5" height="40" rx="20" transform="rotate(77.7 256 146)"/>
+<rect x="255" y="197" width="140" height="30" rx="15" transform="rotate(1 270 212)"/>
+<rect x="119" y="185" width="52.6" height="22" rx="11" transform="rotate(78.7 130 196)"/>
+<rect x="129" y="221" width="80" height="18" rx="9" transform="rotate(178.2 138 230)"/>
+<rect x="131" y="121" width="96.2" height="22" rx="11" transform="rotate(76 142 132)"/>
+<rect x="150.5" y="194.5" width="75.4" height="19" rx="9.5" transform="rotate(172.9 160 204)"/>
+</g>
+<g transform="rotate(10 76 180)" stroke-width="2.5">
+<path d="M68 164 Q75 170 68 176 M68 186 Q75 192 68 198 M94 176 Q100 183 94 190"/>
+</g>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M40 150 L56 162 M30 200 L44 209 M246 238 L262 224"/>
+</g>
+<g class="bg" fill="#ffffff" stroke-width="2.5">
+<circle cx="30" cy="140" r="14"/>
+<circle cx="22" cy="190" r="14"/>
+<circle cx="236" cy="248" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="30" y="146">1</text>
+<text x="22" y="196">2</text>
+<text x="236" y="254">3</text>
+</g>
+</g>
+</svg>

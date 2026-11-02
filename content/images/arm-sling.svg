@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="320" viewBox="0 0 500 320" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="320" rx="12" fill="#ffffff" stroke="none"/>
+<g class="bg" fill="#ffffff">
+<rect x="236" y="80" width="28" height="32" rx="6"/>
+<path d="M182 112 Q250 96 318 112 Q340 118 340 142 L332 340 L168 340 L160 142 Q160 118 182 112 Z"/>
+<rect x="151" y="115" width="30" height="190" rx="15" transform="rotate(4.7 166 130)"/>
+<rect x="319" y="115" width="30" height="128" rx="15" transform="rotate(-5.8 334 130)"/>
+<rect x="180" y="179" width="44" height="22" rx="11" transform="rotate(15 190 190)"/>
+<circle cx="250" cy="56" r="30"/>
+</g>
+<g fill="currentColor" stroke="none">
+<circle cx="239" cy="52" r="3"/>
+<circle cx="261" cy="52" r="3"/>
+</g>
+<path d="M242 70 Q250 75 258 70" stroke-width="2.5"/>
+<g class="bg" fill="#ffffff">
+<rect x="268" y="104" width="30" height="12" rx="5"/>
+</g>
+<g fill="currentColor" stroke="currentColor" stroke-width="2">
+<path d="M204 178 L346 208 L362 236 L350 258 L206 228 Z"/>
+<path d="M204 186 L222 178 L242 104 L226 100 Z"/>
+<path d="M214 196 L234 204 L292 112 L276 102 Z"/>
+<path d="M264 92 L282 100 L276 108 L264 102 Z"/>
+<circle cx="283" cy="106" r="9"/>
+<path d="M286 112 L292 124 M290 104 L302 108" stroke-width="4"/>
+</g>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M120 196 L180 194"/>
+<path d="M322 80 L292 100"/>
+</g>
+<g class="bg" fill="#ffffff" stroke-width="2.5">
+<circle cx="106" cy="196" r="14"/>
+<circle cx="334" cy="70" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="106" y="202">1</text>
+<text x="334" y="76">2</text>
+</g>
+</svg>

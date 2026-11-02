@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="410" viewBox="0 0 500 410" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="410" rx="12" fill="#ffffff" stroke="none"/>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M20 360 H196 M304 360 H480"/>
+<path d="M196 360 Q250 398 304 360"/>
+</g>
+<g stroke-width="2.5">
+<circle cx="214" cy="364" r="6"/><circle cx="229" cy="372" r="7"/><circle cx="246" cy="376" r="6"/><circle cx="263" cy="375" r="7"/><circle cx="280" cy="369" r="6"/><circle cx="294" cy="362" r="5"/>
+<circle cx="222" cy="356" r="5"/><circle cx="238" cy="362" r="6"/><circle cx="254" cy="364" r="5"/><circle cx="270" cy="360" r="6"/><circle cx="285" cy="354" r="5"/>
+</g>
+<g stroke-width="7">
+<path d="M130 360 V96 M130 106 L118 76 M130 106 L142 76"/>
+<path d="M370 360 V96 M370 106 L358 76 M370 106 L382 76"/>
+<path d="M100 98 H400"/>
+<path d="M134 355 L362 328"/>
+</g>
+<ellipse cx="132" cy="352" rx="10" ry="5" stroke-width="2"/>
+<g stroke-width="2">
+<path d="M200 101 V128"/>
+<path d="M300 101 V133"/>
+<path d="M237 141 L250 147 V340"/>
+<circle cx="250" cy="341" r="3"/>
+</g>
+<path d="M188 150 V137 Q188 128 196 128 H204 Q212 128 212 137 V150"/>
+<rect class="bg" x="175" y="150" width="66" height="74" rx="9" fill="#ffffff"/>
+<path d="M225 150 V140 H237 V150"/>
+<rect x="223" y="133" width="16" height="7" rx="2"/>
+<rect x="286" y="133" width="28" height="18" rx="6"/>
+<circle class="accent-fill" cx="241" cy="166" r="4" fill="#b00020" stroke="none"/>
+<g class="accent" stroke="#b00020" stroke-width="4">
+<path d="M350 278 V316 M341 305 L350 317 L359 305"/>
+<path d="M243 220 L250 231 L257 220"/>
+</g>
+<g stroke-width="2.5">
+<circle cx="98" cy="240" r="14"/>
+<circle cx="250" cy="62" r="14"/>
+<circle cx="208" cy="192" r="14"/>
+<circle cx="276" cy="190" r="14"/>
+<circle cx="276" cy="262" r="14"/>
+<circle cx="316" cy="296" r="14"/>
+<circle cx="338" cy="142" r="14"/>
+<circle cx="330" cy="390" r="14"/>
+</g>
+<path d="M262 184 L246 170" stroke-width="2"/>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="98" y="246">1</text>
+<text x="250" y="68">2</text>
+<text x="208" y="198">3</text>
+<text x="276" y="196">4</text>
+<text x="276" y="268">5</text>
+<text x="316" y="302">6</text>
+<text x="338" y="148">7</text>
+<text x="330" y="396">8</text>
+</g>
+</svg>

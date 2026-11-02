@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="290" viewBox="0 0 500 290" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="290" rx="12" fill="#ffffff" stroke="none"/>
+<path d="M60 252 H400 Q405.8 234 411.7 240 Q417.5 222 423.3 228 Q429.2 210 435 216 Q440.8 198 446.7 204 Q452.5 186 458.3 192 Q464.2 174 470 180 H130 Q124.2 174 118.3 192 Q112.5 186 106.7 204 Q100.8 198 95 216 Q89.2 210 83.3 228 Q77.5 222 71.7 240 Q65.8 234 60 252"/>
+<path class="muted" stroke="#666666" stroke-width="2" d="M65.8 240 H405.8M77.5 228 H417.5M89.2 216 H429.2M100.8 204 H440.8M112.5 192 H452.5M124.2 180 H464.2"/>
+<g stroke-width="3">
+<path class="bg" fill="#ffffff" d="M145 170 H231 C245 170 249 184 256 184 H262 V202 H256 C249 202 245 216 231 216 H145 Q135 216 135 206 V180 Q135 170 145 170 Z"/><rect class="bg" x="262" y="181" width="11" height="24" rx="2" fill="#ffffff"/>
+<path class="bg" fill="#ffffff" d="M307 170 H393 C407 170 411 184 418 184 H424 V202 H418 C411 202 407 216 393 216 H307 Q297 216 297 206 V180 Q297 170 307 170 Z"/><rect class="bg" x="424" y="181" width="11" height="24" rx="2" fill="#ffffff"/>
+</g>
+<path class="muted" stroke="#666666" stroke-width="2" d="M157 174 V212 M165 174 V212 M319 174 V212 M327 174 V212 M177 181 H221 M339 181 H383"/>
+<g class="accent" stroke="#b00020">
+<circle cx="66" cy="58" r="24"/>
+<path d="M96.5 70.6 L107.6 75.2 M78.6 88.5 L83.2 99.6 M53.4 88.5 L48.8 99.6 M35.5 70.6 L24.4 75.2 M35.5 45.4 L24.4 40.8 M53.4 27.5 L48.8 16.4 M78.6 27.5 L83.2 16.4 M96.5 45.4 L107.6 40.8"/>
+<path stroke-width="2.5" d="M112 96 L168 150 M157.5 146.6 L168 150 L164.2 139.7 M140 82 L262 146 M251 145.6 L262 146 L255.5 137.2 M170 66 L360 140 M349 140.9 L360 140 L352.5 131.9"/>
+</g>
+<g stroke-width="2">
+<path d="M444 120 L404 160 M440 262 L408 248"/>
+</g>
+<g stroke-width="2.5">
+<circle cx="456" cy="108" r="14"/>
+<circle cx="454" cy="268" r="14"/>
+<circle cx="66" cy="132" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="456" y="114">1</text>
+<text x="454" y="274">2</text>
+<text x="66" y="138">3</text>
+</g>
+</svg>

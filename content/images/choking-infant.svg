@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="280" viewBox="0 0 500 280" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="280" rx="12" fill="#ffffff" stroke="none"/>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M250 14 L250 266" stroke-dasharray="4 5"/>
+</g>
+<g fill="currentColor" stroke="currentColor">
+<path d="M70 198 L246 172 M320 198 L494 172" stroke-width="46" stroke-linecap="butt"/>
+<path d="M70 198 L76 280 M320 198 L326 280" stroke-width="36" stroke-linecap="butt"/>
+<circle cx="70" cy="198" r="23" stroke="none"/>
+<circle cx="320" cy="198" r="23" stroke="none"/>
+</g>
+<g class="bg" fill="#ffffff" stroke="none">
+<rect x="179" y="128" width="139.2" height="34" rx="17" transform="rotate(171.3 196 145)"/>
+<rect x="429" y="128" width="139.2" height="34" rx="17" transform="rotate(171.3 446 145)"/>
+<rect x="179" y="128" width="80" height="34" rx="17" transform="rotate(-55.6 196 145)"/>
+<rect x="429" y="128" width="80" height="34" rx="17" transform="rotate(-55.6 446 145)"/>
+</g>
+<g fill="currentColor" stroke="currentColor">
+<path d="M196 145 L246 72 M446 145 L494 72" stroke-width="28" stroke-linecap="butt"/>
+<path d="M196 145 L92 161 M446 145 L342 161" stroke-width="26"/>
+<circle cx="196" cy="145" r="14" stroke="none"/>
+<circle cx="446" cy="145" r="14" stroke="none"/>
+<ellipse cx="326" cy="167" rx="16" ry="7" stroke="none"/>
+</g>
+<g class="bg" fill="#ffffff">
+<rect x="94" y="109" width="119" height="36" rx="18" transform="rotate(-9 112 127)"/>
+<rect x="184.5" y="106.5" width="55.8" height="19" rx="9.5" transform="rotate(67.6 194 116)"/>
+<rect x="199.5" y="141.5" width="50.5" height="17" rx="8.5" transform="rotate(107.4 208 150)"/>
+<rect x="102" y="118" width="45.3" height="20" rx="10" transform="rotate(161.6 112 128)"/>
+<circle cx="74" cy="142" r="21"/>
+<path d="M62 159.2 L63.5 168 L70.4 162.7"/>
+<rect x="114.5" y="124.5" width="71.3" height="15" rx="7.5" transform="rotate(96.1 122 132)"/>
+<ellipse cx="85" cy="164" rx="13" ry="7" fill="currentColor"/>
+<rect x="344" y="109" width="119" height="36" rx="18" transform="rotate(-9 362 127)"/>
+<rect x="434.5" y="106.5" width="55.8" height="19" rx="9.5" transform="rotate(67.6 444 116)"/>
+<rect x="449.5" y="141.5" width="50.5" height="17" rx="8.5" transform="rotate(107.4 458 150)"/>
+<rect x="352" y="118" width="45.3" height="20" rx="10" transform="rotate(161.6 362 128)"/>
+<circle cx="324" cy="142" r="21"/>
+<path d="M313.5 123.8 L315.3 115.4 L322.2 121.1"/>
+<rect x="364.5" y="124.5" width="71.3" height="15" rx="7.5" transform="rotate(96.1 372 132)"/>
+</g>
+<path d="M311 133 Q316 137 321 133 M330 126 L335 129 M61 148 Q66 152 71 149" stroke-width="2.5"/>
+<g fill="currentColor" stroke="currentColor">
+<path d="M196 44 L246 54 M448 46 L494 56" stroke-width="28" stroke-linecap="butt"/>
+<path d="M142 88 L196 44 M400 88 L448 46" stroke-width="22"/>
+<circle cx="196" cy="44" r="14" stroke="none"/>
+<circle cx="448" cy="46" r="14" stroke="none"/>
+<path d="M134 99 L116 84 M392 99 L372 93" stroke-width="16"/>
+</g>
+<g class="accent" stroke="#b00020" stroke-width="3.5">
+<path d="M108 98 L97 92 M150 96 L160 90 M104 106 L92 106"/>
+<path d="M380 34 L380 74 M371 63 L380 75 L389 63" stroke-width="4.5"/>
+</g>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M62 66 L104 82"/>
+<path d="M312 76 L360 92"/>
+</g>
+<g class="bg" fill="#ffffff" stroke-width="2.5">
+<circle cx="50" cy="60" r="14"/>
+<circle cx="300" cy="70" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="50" y="66">1</text>
+<text x="300" y="76">2</text>
+</g>
+</svg>

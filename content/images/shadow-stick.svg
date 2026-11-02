@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="290" viewBox="0 0 500 290" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="290" rx="12" fill="#ffffff" stroke="none"/>
+<g class="muted" stroke="#666666" stroke-width="9">
+<path stroke-dasharray="2 14" d="M300 250 L170 124"/>
+<path d="M300 250 L260 124"/>
+</g>
+<path d="M54 124 L440 124 M426 116 L440 124 L426 132"/>
+<path d="M396 40 L396 208 M388 54 L396 40 L404 54"/>
+<path stroke-width="2" d="M396 110 L410 110 L410 124"/>
+<circle cx="300" cy="250" r="9" fill="currentColor" stroke="none"/>
+<circle cx="300" cy="250" r="15" stroke-width="2"/>
+<circle cx="170" cy="124" r="8" fill="currentColor" stroke="none"/>
+<circle cx="260" cy="124" r="8" fill="currentColor" stroke="none"/>
+<g stroke-width="2.5">
+<circle cx="170" cy="92" r="14"/>
+<circle cx="260" cy="92" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="170" y="98">1</text>
+<text x="260" y="98">2</text>
+<text x="34" y="130">W</text>
+<text x="462" y="130">E</text>
+<text x="396" y="30">N</text>
+<text x="396" y="232">S</text>
+</g>
+</svg>

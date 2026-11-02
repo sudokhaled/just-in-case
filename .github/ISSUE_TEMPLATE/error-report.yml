@@ -1,0 +1,45 @@
+name: Report an error
+description: Something in an article is wrong, unclear or dangerous.
+title: "Error: "
+labels: ["error-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. A wrong number in this library could cost a life, so this is the most valuable report you can make.
+  - type: input
+    id: article
+    attributes:
+      label: Which article?
+      description: The title, or the file path such as content/en/water/purify-water.md
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: How serious is it?
+      options:
+        - Could cause injury or death if followed
+        - Wrong but probably not dangerous
+        - Unclear or confusing
+        - Typo or formatting
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What does it say now?
+      description: Copy the sentence or number.
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: What should it say?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A guideline, manual or study that supports the correction, plus your own expertise if relevant.

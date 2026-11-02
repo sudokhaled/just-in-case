@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="316" viewBox="0 0 500 316" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="316" rx="12" fill="#ffffff" stroke="none"/>
+<g class="muted" stroke="#666666" stroke-width="1.5">
+<path d="M106 227 H130M118 227 V239M106 215 H130M112 215 V227M124 215 V227M106 203 H130M118 203 V215M106 191 H130M112 191 V203M124 191 V203M106 179 H130M118 179 V191M106 167 H130M112 167 V179M124 167 V179M106 155 H130M118 155 V167M106 143 H130M112 143 V155M124 143 V155M106 131 H130M118 131 V143M106 119 H130M112 119 V131M124 119 V131M106 107 H130M118 107 V119"/>
+<path transform="translate(264 0)" d="M106 227 H130M118 227 V239M106 215 H130M112 215 V227M124 215 V227M106 203 H130M118 203 V215M106 191 H130M112 191 V203M124 191 V203M106 179 H130M118 179 V191M106 167 H130M112 167 V179M124 167 V179M106 155 H130M118 155 V167M106 143 H130M112 143 V155M124 143 V155M106 131 H130M118 131 V143M106 119 H130M112 119 V131M124 119 V131M106 107 H130M118 107 V119"/>
+</g>
+<g stroke-width="2">
+<path d="M96 263 h13 v8 h-13z M112 263 h13 v8 h-13z M128 263 h12 v8 h-12z M96 273 h10 v7 h-10z M109 273 h14 v7 h-14z M126 273 h14 v7 h-14z M108 242 h10 v7 h-10z M120 242 h8 v7 h-8z M108 251 h7 v7 h-7z M117 251 h11 v7 h-11z"/>
+<path transform="translate(264 0)" d="M96 263 h13 v8 h-13z M112 263 h13 v8 h-13z M128 263 h12 v8 h-12z M96 273 h10 v7 h-10z M109 273 h14 v7 h-14z M126 273 h14 v7 h-14z M108 242 h10 v7 h-10z M120 242 h8 v7 h-8z M108 251 h7 v7 h-7z M117 251 h11 v7 h-11z"/>
+</g>
+<path d="M20 268 H28 Q39 284 50 268 L94 261 M142 260 H358 M406 261 L450 268 Q461 284 472 268 H480"/>
+<path d="M94 261 V284 H142 V260 M358 260 V284 H406 V261"/>
+<path d="M106 260 V95 H130 V260 M370 260 V95 H394 V260"/>
+<path stroke-width="5" d="M103 239 H133 M367 239 H397"/>
+<g class="accent" stroke="#b00020">
+<rect x="103" y="85" width="30" height="10"/>
+<rect x="367" y="85" width="30" height="10"/>
+</g>
+<path stroke-width="4" d="M66 101 L250 24 L434 101"/>
+<g stroke-width="2.5" stroke-dasharray="5 9">
+<path d="M68 112 V252 M432 112 V252"/>
+</g>
+<g stroke-width="2.5">
+<circle cx="61" cy="262" r="3.5"/><circle cx="70" cy="261" r="3.5"/><circle cx="79" cy="260" r="3.5"/>
+<circle cx="421" cy="260" r="3.5"/><circle cx="430" cy="261" r="3.5"/><circle cx="439" cy="262" r="3.5"/>
+</g>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M394 112 V126 M432 98 V126"/>
+</g>
+<g stroke-width="2.5">
+<path d="M397 120 H429 M405 115 L397 120 L405 125 M421 115 L429 120 L421 125"/>
+<path d="M154 278 L143 274 M154 238 L133 250 M154 207 L134 238 M154 150 L131 150 M154 106 L134 92 M444 90 L436 98 M447 240 L441 256 M452 290 L461 278"/>
+</g>
+<g stroke-width="2.5">
+<circle cx="168" cy="280" r="14"/>
+<circle cx="168" cy="238" r="14"/>
+<circle cx="168" cy="204" r="14"/>
+<circle cx="168" cy="150" r="14"/>
+<circle cx="168" cy="106" r="14"/>
+<circle cx="456" cy="78" r="14"/>
+<circle cx="456" cy="226" r="14"/>
+<circle cx="444" cy="300" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="168" y="286">1</text>
+<text x="168" y="244">2</text>
+<text x="168" y="210">3</text>
+<text x="168" y="156">4</text>
+<text x="168" y="112">5</text>
+<text x="456" y="84">6</text>
+<text x="456" y="232">7</text>
+<text x="444" y="306">8</text>
+</g>
+</svg>

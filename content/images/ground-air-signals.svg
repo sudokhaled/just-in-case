@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="190" viewBox="0 0 500 190" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="190" rx="12" fill="#ffffff" stroke="none"/>
+<g stroke-width="11">
+<path d="M28 34 L50 120 L72 34"/>
+<path d="M126 34 L182 120 M182 34 L126 120"/>
+<path d="M226 120 L226 34 L274 120 L274 34"/>
+<path d="M326 34 L350 76 L374 34 M350 76 L350 120"/>
+<path d="M420 77 L478 77 M454 50 L480 77 L454 104"/>
+</g>
+<g class="muted" stroke="#666666" stroke-width="2" stroke-dasharray="4 5">
+<path d="M10 140 L490 140"/>
+</g>
+<g stroke-width="2.5">
+<circle cx="50" cy="165" r="14"/>
+<circle cx="154" cy="165" r="14"/>
+<circle cx="250" cy="165" r="14"/>
+<circle cx="350" cy="165" r="14"/>
+<circle cx="450" cy="165" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="50" y="171">1</text>
+<text x="154" y="171">2</text>
+<text x="250" y="171">3</text>
+<text x="350" y="171">4</text>
+<text x="450" y="171">5</text>
+</g>
+</svg>

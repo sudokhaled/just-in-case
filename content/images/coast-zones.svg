@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="300" rx="12" fill="#ffffff" stroke="none"/>
+<path class="muted" stroke="#666666" stroke-width="2" d="M30 236 q5 -3 10 0 t10 0 t10 0 t10 0 t10 0 t10 0 M44 250 q5 -3 10 0 t10 0 t10 0"/>
+<path d="M20 222 q5 -3 10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0"/>
+<path class="muted" stroke="#666666" stroke-width="2.5" stroke-dasharray="9 7" d="M20 198 H190"/>
+<path d="M20 262 L240 180 Q258 176 270 160 Q290 118 310 116 Q330 118 345 150 Q352 166 364 168 L370 181 H388 L394 168 Q420 166 430 146 Q440 136 480 136"/>
+<path class="muted" stroke="#666666" stroke-width="2" stroke-dasharray="7 6" d="M159 210 Q210 196 260 188 Q330 180 480 176"/>
+<path class="muted" stroke="#666666" stroke-width="2" d="M373 178 q4 -2 8 0 t8 0"/>
+<path class="accent" stroke="#b00020" stroke-width="3" d="M159 210 C220 246 320 266 480 272"/>
+<g fill="currentColor" stroke-width="1.5">
+<path d="M184 195 q4 -6 9 -2 q4 -4 8 1 q-3 4 -9 3 q-4 3 -8 -2z"/>
+<path d="M234 176 q4 -5 8 -1 q5 -3 8 2 q-4 3 -8 1 q-4 3 -8 -2z"/>
+</g>
+<path stroke-width="5" d="M212 187 L238 178"/>
+<path stroke-width="2" d="M279 138q-1 -9 -8 -13M281 137q0 -10 -3 -17M283 137q0 -10 3 -17M285 138q1 -9 8 -13M297 120q-1 -9 -8 -13M299 119q0 -10 -3 -17M301 119q0 -10 3 -17M303 120q1 -9 8 -13M317 124q-1 -9 -8 -13M319 123q0 -10 -3 -17M321 123q0 -10 3 -17M323 124q1 -9 8 -13M355 167q-1 -9 -8 -13M357 166q0 -10 -3 -17M359 166q0 -10 3 -17M361 167q1 -9 8 -13M399 167q-1 -9 -8 -13M401 166q0 -10 -3 -17M403 166q0 -10 3 -17M405 167q1 -9 8 -13"/>
+<path d="M440 136 V112 H472 V136 M434 114 L456 96 L478 114"/>
+<rect x="450" y="120" width="11" height="16" stroke-width="2.5"/>
+<g stroke-width="2.5">
+<path d="M94 192 L104 218 M180 166 L190 190 M228 152 L234 170 M380 154 L380 166"/>
+</g>
+<g stroke-width="2.5">
+<circle cx="88" cy="178" r="14"/>
+<circle cx="40" cy="178" r="14"/>
+<circle cx="174" cy="152" r="14"/>
+<circle cx="224" cy="138" r="14"/>
+<circle cx="300" cy="84" r="14"/>
+<circle cx="380" cy="140" r="14"/>
+<circle cx="420" cy="218" r="14"/>
+<circle cx="240" cy="270" r="14"/>
+<circle cx="456" cy="76" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="88" y="184">1</text>
+<text x="40" y="184">2</text>
+<text x="174" y="158">3</text>
+<text x="224" y="144">4</text>
+<text x="300" y="90">5</text>
+<text x="380" y="146">6</text>
+<text x="420" y="224">7</text>
+<text x="240" y="276">8</text>
+<text x="456" y="82">9</text>
+</g>
+</svg>

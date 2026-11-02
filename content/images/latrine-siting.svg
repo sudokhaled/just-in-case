@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="340" viewBox="0 0 500 340" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="340" rx="12" fill="#ffffff" stroke="none"/>
+<path d="M20 140 H64 M98 140 H150 Q170 140 190 152 L300 200 Q318 208 340 208 H360 M400 208 H480"/>
+<g class="muted" stroke="#666666" stroke-width="2.5" stroke-dasharray="7 7">
+<path d="M20 252 H150 Q175 252 200 262 L290 296 Q306 302 330 302 H480"/>
+</g>
+<path d="M68 140 V282 M94 140 V282"/>
+<path class="muted" stroke="#666666" stroke-width="2" d="M70 252 q5 -4 10 0 t10 0"/>
+<rect x="60" y="120" width="42" height="20" rx="2"/>
+<path d="M66 120 V82 M96 120 V82 M60 82 H102" stroke-width="4"/>
+<path d="M81 82 V102" stroke-width="2"/>
+<path d="M74 102 H88 L86 114 H76 Z"/>
+<path d="M360 208 V268 H400 V208"/>
+<path class="muted" stroke="#666666" stroke-width="2" d="M366 262 q7 -5 14 0 t14 0"/>
+<path d="M344 208 V144 H416 V208 M336 148 L380 130 L424 148"/>
+<rect x="364" y="160" width="32" height="48"/>
+<path d="M344 208 Q340 203 330 208 M416 208 Q420 203 430 208" stroke-width="2"/>
+<g class="accent" stroke="#b00020" stroke-width="3">
+<path d="M81 52 H380 M81 42 V62 M380 42 V62"/>
+<path d="M92 46 L81 52 L92 58 M369 46 L380 52 L369 58"/>
+<path d="M430 268 V302 M424 276 L430 268 L436 276 M424 294 L430 302 L436 294"/>
+<path d="M404 268 H440 M404 302 H440" stroke-width="2"/>
+</g>
+<g stroke-width="2.5">
+<circle cx="36" cy="100" r="14"/>
+<circle cx="458" cy="166" r="14"/>
+<circle cx="230" cy="30" r="14"/>
+<circle cx="336" cy="242" r="14"/>
+<circle cx="464" cy="285" r="14"/>
+<circle cx="236" cy="306" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="36" y="106">1</text>
+<text x="458" y="172">2</text>
+<text x="230" y="36">3</text>
+<text x="336" y="248">4</text>
+<text x="464" y="291">5</text>
+<text x="236" y="312">6</text>
+</g>
+</svg>

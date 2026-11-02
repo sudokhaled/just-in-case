@@ -1,0 +1,26 @@
+name: Translation
+description: Start or coordinate a translation into another language.
+title: "Translation: "
+labels: ["translation"]
+body:
+  - type: input
+    id: language
+    attributes:
+      label: Language and code
+      description: For example "Arabic (ar)" or "Swahili (sw)"
+    validations:
+      required: true
+  - type: textarea
+    id: articles
+    attributes:
+      label: Which articles will you translate?
+      description: Please start with the critical articles (marked ★ in ROADMAP.md).
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before you start
+      options:
+        - label: I have read the Translating section of CONTRIBUTING.md
+          required: true
+        - label: I will keep every number, dose and unit exactly as in the English article
+          required: true

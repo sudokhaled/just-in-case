@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="320" viewBox="0 0 500 320" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="320" rx="12" fill="#ffffff" stroke="none"/>
+<g class="bg" fill="#ffffff">
+<rect x="194" y="114" width="76.8" height="24" rx="12" transform="rotate(-150.5 206 126)"/>
+<rect x="282" y="114" width="76.8" height="24" rx="12" transform="rotate(-29.5 294 126)"/>
+<rect x="167" y="249" width="66.5" height="26" rx="13" transform="rotate(57.1 180 262)"/>
+<rect x="208" y="208" width="86" height="28" rx="14" transform="rotate(136.4 222 222)"/>
+<rect x="307" y="249" width="66.5" height="26" rx="13" transform="rotate(122.9 320 262)"/>
+<rect x="264" y="208" width="86" height="28" rx="14" transform="rotate(43.6 278 222)"/>
+<rect x="190" y="104" width="120" height="136" rx="48"/>
+<circle cx="250" cy="62" r="44"/>
+</g>
+<g stroke-width="2.5">
+<path d="M230 58 Q235 63 240 58 M260 58 Q265 63 270 58 M243 82 Q250 87 257 82"/>
+</g>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M250 116 L250 198"/>
+<path d="M196 150 L304 150" stroke-dasharray="4 5"/>
+</g>
+<g fill="currentColor" stroke="none">
+<circle cx="222" cy="150" r="4"/>
+<circle cx="278" cy="150" r="4"/>
+<rect x="174" y="190" width="161.8" height="32" rx="16" transform="rotate(118.5 190 206)"/>
+<rect x="294" y="190" width="161.8" height="32" rx="16" transform="rotate(61.5 310 206)"/>
+<ellipse cx="192" cy="186" rx="20" ry="32"/>
+<ellipse cx="308" cy="186" rx="20" ry="32"/>
+</g>
+<g stroke-width="14">
+<path d="M204 202 Q240 198 243 164"/>
+<path d="M296 202 Q260 198 257 164"/>
+</g>
+<g class="accent" stroke="#b00020" stroke-width="3.5">
+<circle cx="250" cy="176" r="24"/>
+</g>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M274 176 L390 176"/>
+</g>
+<g class="bg" fill="#ffffff" stroke-width="2.5">
+<circle cx="404" cy="176" r="14"/>
+<circle cx="130" cy="186" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="404" y="182">1</text>
+<text x="130" y="192">2</text>
+</g>
+</svg>

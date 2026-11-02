@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="292" viewBox="0 0 500 292" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="292" rx="12" fill="#ffffff" stroke="none"/>
+<path class="muted" stroke="#666666" stroke-width="2" d="M106 214 q6 -3 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 M126 230 q6 -3 12 0 t12 0 t12 0 t12 0 t12 0 t12 0"/>
+<path d="M20 150 H92 M88 212 L96 228 Q120 254 160 252 Q205 250 225 222 L250 196 Q268 182 300 181 H360 Q372 178 376 142 Q380 104 396 100 H480"/>
+<path d="M86 200 H246"/>
+<g class="accent" stroke="#b00020">
+<path d="M92 150 H122 L121 160 Q100 160 90 174 Q82 190 88 212"/>
+<path stroke-width="2.5" d="M100 151 l-3 6 l4 5 l-4 6 l3 5"/>
+<path stroke-dasharray="10 8" d="M20 140 H286 M314 140 H372"/>
+</g>
+<path d="M296 181 V112 M304 181 V112 M296 152 L256 140 M300 128 L282 110"/>
+<path d="M300 112 C268 116 258 92 270 78 C268 56 296 46 312 56 C334 50 346 72 336 88 C344 104 324 118 300 112 Z"/>
+<path fill="currentColor" stroke-width="2" d="M258 139 L266 134 L274 138 L282 135 L292 142 L288 147 L282 146 L280 154 L275 148 L270 156 L267 147 L260 148 Z"/>
+<path stroke-width="2" d="M264 149 l-2 10 M274 150 l1 11 M284 148 l2 9 M256 136 l-6 -4 M290 140 l5 -6"/>
+<path stroke-width="5" d="M292 140 H308"/>
+<path d="M404 100 V72 H444 V100 M398 74 L424 54 L450 74"/>
+<rect x="418" y="82" width="12" height="18" stroke-width="2.5"/>
+<path d="M458 100 V74 H478 V100 M455 76 L481 70"/>
+<path d="M461 100 V130 H475 V100"/>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M246 206 V278 M468 136 V278 M362 100 H392"/>
+</g>
+<g stroke-width="2.5">
+<path d="M250 270 H464 M258 265 L250 270 L258 275 M456 265 L464 270 L456 275"/>
+<path d="M366 104 V136 M361 112 L366 104 L371 112 M361 128 L366 136 L371 128"/>
+<path d="M248 116 L262 134 M66 186 L84 186 M322 155 L309 142"/>
+</g>
+<g stroke-width="2.5">
+<circle cx="240" cy="106" r="14"/>
+<circle cx="334" cy="164" r="14"/>
+<circle cx="56" cy="122" r="14"/>
+<circle cx="344" cy="118" r="14"/>
+<circle cx="52" cy="186" r="14"/>
+<circle class="bg" cx="356" cy="270" r="14" fill="#ffffff"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="240" y="112">1</text>
+<text x="334" y="170">2</text>
+<text x="56" y="128">3</text>
+<text x="344" y="124">4</text>
+<text x="52" y="192">5</text>
+<text x="356" y="276">6</text>
+</g>
+</svg>

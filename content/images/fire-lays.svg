@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="300" rx="12" fill="#ffffff" stroke="none"/>
+<g class="muted" stroke="#666666" stroke-width="2">
+<path d="M250 24 V276" stroke-dasharray="4 5"/>
+<ellipse cx="125" cy="236" rx="96" ry="24"/>
+<ellipse cx="381" cy="228" rx="104" ry="40"/>
+</g>
+<path stroke-width="4" d="M67.9 229.6 L128.4 85.1 M77.5 224 L125.7 84.8 M96 219.9 L128.2 84.4 M119.9 218.1 L129.9 84 M144.8 218.8 L125 84.2 M166 222.1 L117.5 84.8 M179.5 227.2 L115.8 85.2"/>
+<path class="bg accent" fill="#ffffff" stroke="#b00020" d="M104 238 C96 232 100 222 108 222 C108 212 120 210 126 216 C132 208 146 212 144 222 C152 224 152 236 144 238 Z"/>
+<path class="accent" stroke="#b00020" stroke-width="2" d="M112 230 q6 -8 12 0 t12 0 M118 222 q4 -5 8 0"/>
+<path stroke-width="4" d="M182.4 233.9 L121.3 85 M173.6 239.6 L124.7 84.6 M155.7 243.9 L122.6 84.3 M132.1 245.9 L120.2 84"/>
+<path stroke-width="2.5" d="M14 214 q7 -6 14 0 t14 0 t14 0 H66 M58 207 L67 214 L58 221"/>
+<path class="bg" stroke-width="2.5" fill="#ffffff" d="M302 247.6 L360.3 199.4 A6.5 6.5 0 0 0 352 189.4 L293.7 237.6 A6.5 6.5 0 0 0 302 247.6 Z"/>
+<path class="bg" stroke-width="2.5" fill="#ffffff" d="M408 247.6 L466.3 199.4 A6.5 6.5 0 0 0 458 189.4 L399.7 237.6 A6.5 6.5 0 0 0 408 247.6 Z"/>
+<rect class="bg" stroke-width="2.5" x="342" y="180" width="122" height="13" rx="6.5" fill="#ffffff"/>
+<path class="bg" stroke-width="2.5" fill="#ffffff" d="M302 221.6 L360.3 173.4 A6.5 6.5 0 0 0 352 163.4 L293.7 211.6 A6.5 6.5 0 0 0 302 221.6 Z"/>
+<path class="bg" stroke-width="2.5" fill="#ffffff" d="M408 221.6 L466.3 173.4 A6.5 6.5 0 0 0 458 163.4 L399.7 211.6 A6.5 6.5 0 0 0 408 221.6 Z"/>
+<rect class="bg" stroke-width="2.5" x="342" y="154" width="122" height="13" rx="6.5" fill="#ffffff"/>
+<path class="bg" stroke-width="2.5" fill="#ffffff" d="M302 195.6 L360.3 147.4 A6.5 6.5 0 0 0 352 137.4 L293.7 185.6 A6.5 6.5 0 0 0 302 195.6 Z"/>
+<path class="bg" stroke-width="2.5" fill="#ffffff" d="M408 195.6 L466.3 147.4 A6.5 6.5 0 0 0 458 137.4 L399.7 185.6 A6.5 6.5 0 0 0 408 195.6 Z"/>
+<path stroke-width="3" d="M355.6 223.3 L378.7 118.2 M371.1 218.5 L383.2 118.1 M393 219.1 L378.6 118.1 M405.1 223.9 L374.4 118.4"/>
+<path class="bg accent" fill="#ffffff" stroke="#b00020" stroke-width="2.5" d="M368 230 C364 226 366 220 371 220 C372 214 379 213 382 217 C386 213 393 216 392 221 C396 223 395 230 391 230 Z"/>
+<path stroke-width="3" d="M403.6 229.4 L382 118.2 M388.9 233.5 L377 118.1 M357.5 230 L386.5 118.3"/>
+<rect class="bg" stroke-width="2.5" x="296" y="218" width="122" height="13" rx="6.5" fill="#ffffff"/>
+<circle class="bg" stroke-width="2.5" cx="297.8" cy="216.6" r="6.5" fill="#ffffff"/><circle class="bg" stroke-width="2.5" cx="403.8" cy="216.6" r="6.5" fill="#ffffff"/>
+<rect class="bg" stroke-width="2.5" x="296" y="192" width="122" height="13" rx="6.5" fill="#ffffff"/>
+<circle class="bg" stroke-width="2.5" cx="297.8" cy="190.6" r="6.5" fill="#ffffff"/><circle class="bg" stroke-width="2.5" cx="403.8" cy="190.6" r="6.5" fill="#ffffff"/>
+<g stroke-width="2">
+<path d="M117 268 L122 242 M190 140 L160 152 M380 104 L380 118 M290 160 L302 188"/>
+</g>
+<g stroke-width="2.5">
+<circle cx="114" cy="282" r="14"/>
+<circle cx="204" cy="134" r="14"/>
+<circle cx="34" cy="184" r="14"/>
+<circle cx="380" cy="88" r="14"/>
+<circle cx="280" cy="146" r="14"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="114" y="288">1</text>
+<text x="204" y="140">2</text>
+<text x="34" y="190">3</text>
+<text x="380" y="94">4</text>
+<text x="280" y="152">5</text>
+</g>
+</svg>

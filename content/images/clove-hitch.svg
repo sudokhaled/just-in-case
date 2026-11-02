@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="226" viewBox="0 0 500 226" color="#1a1a1a" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect class="bg" width="500" height="226" rx="12" fill="#ffffff" stroke="none"/>
+<rect class="bg" x="85" y="30" width="80" height="176" fill="#ffffff" stroke="none"/>
+<path d="M85 30 L85 206 M165 30 L165 206"/>
+<ellipse cx="125" cy="30" rx="40" ry="9"/>
+<path class="muted" stroke="#666666" stroke-width="2.5" stroke-dasharray="5 6" d="M165 100 L85 74"/>
+<path stroke-width="11" d="M8 100C16.7 100 43 100 60 100C77 100 92.5 100 110 100C127.5 100 155 100.3 165 100C175 99.7 169.2 98.3 170 98"/>
+<path stroke-width="11" d="M80 76C80.8 75.7 77.5 67.7 85 74C92.5 80.3 114.3 103.3 125 114C135.7 124.7 145 134 149 138"/>
+<path class="bg" fill="#ffffff" stroke="none" d="M108.9 84.6L126.6 102.8L113.7 115.4L96 97.2Z"/>
+<path stroke-width="11" stroke-linecap="butt" d="M98.1 86.6L102.7 91.2L107.3 95.9L111.9 100.7L116.4 105.3L120.5 109.5L124.2 113.2"/>
+<circle cx="26" cy="34" r="14" stroke-width="2.5"/>
+<text x="26" y="40" fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">1</text>
+<rect class="bg" x="335" y="30" width="80" height="176" fill="#ffffff" stroke="none"/>
+<path d="M335 30 L335 206 M415 30 L415 206"/>
+<ellipse cx="375" cy="30" rx="40" ry="9"/>
+<path class="muted" stroke="#666666" stroke-width="2.5" stroke-dasharray="5 6" d="M415 100 L335 74"/>
+<path class="muted" stroke="#666666" stroke-width="2.5" stroke-dasharray="5 6" d="M415 154 L335 128"/>
+<path stroke-width="11" d="M258 100C266.7 100 293 100 310 100C327 100 342.5 100 360 100C377.5 100 405 100.3 415 100C425 99.7 419.2 98.3 420 98"/>
+<path stroke-width="11" d="M330 76C330.8 75.7 327.5 67.7 335 74C342.5 80.3 361.7 100.7 375 114C388.3 127.3 407.5 147.7 415 154C422.5 160.3 419.2 152.3 420 152"/>
+<path stroke-width="11" d="M330 130C330.8 129.7 327.5 128.3 335 128C342.5 127.7 361.7 128 375 128C388.3 128 395.8 128 415 128C434.2 128 477.5 128 490 128"/>
+<path class="bg" fill="#ffffff" stroke="none" d="M358.8 84.6L376.5 102.8L363.7 115.4L345.9 97.2Z"/>
+<path stroke-width="11" stroke-linecap="butt" d="M348.5 87L351.7 90.3L355.1 93.7L358.5 97.2L361.9 100.7L365.3 104.2L368.7 107.6L371.9 110.9L374 113"/>
+<path class="bg" fill="#ffffff" stroke="none" d="M386.4 112.6L404.1 130.8L391.2 143.4L373.5 125.2Z"/>
+<path stroke-width="11" stroke-linecap="butt" d="M376 115L379.2 118.2L382.4 121.5L385.8 125L389.2 128.5L392.7 132L396.1 135.5L399.4 138.9L401.5 141"/>
+<circle cx="276" cy="34" r="14" stroke-width="2.5"/>
+<text x="276" y="40" fill="currentColor" stroke="none" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">2</text>
+<path class="muted" stroke="#666666" stroke-width="2" d="M10 206 L490 206"/>
+</svg>
