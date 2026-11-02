@@ -47,10 +47,12 @@ jobs:
           sudo apt-get install -y --no-install-recommends calibre
           ebook-convert dist/just-in-case.epub dist/just-in-case.azw3 --title "Just In Case"
 
+      - uses: arduino/setup-arduino-cli@v2
+        with:
+          version: "1.x"
+
       - name: ESP32 flash images
         run: |
-          curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR="$HOME/bin" sh
-          export PATH="$HOME/bin:$PATH"
           arduino-cli config init --overwrite
           arduino-cli config add board_manager.additional_urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
           arduino-cli core update-index
