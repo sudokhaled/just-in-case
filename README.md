@@ -17,7 +17,7 @@ It runs on **paper**, a **Kindle**, an **old phone**, or a **$3 chip on a power 
 [![Content: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-lightgrey)](LICENSE-CONTENT.txt)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-lightgrey)](LICENSE)
 
-**[Download](../../releases/latest)** · **[Read it online](https://sudokhaled.github.io/just-in-case/)** · **[What's inside](#whats-inside)** · **[Help write it](CONTRIBUTING.md)**
+**[Download](#download)** · **[Read it online](https://sudokhaled.github.io/just-in-case/)** · **[What's inside](#whats-inside)** · **[Help write it](CONTRIBUTING.md)**
 
 <img src=".github/assets/screenshots.png" width="760" alt="Three phone screens: searching the library for baby diarrhea; the article Making Water Safe to Drink, opening with a red DANGER box; and the CPR article in dark mode with a numbered drawing of chest compressions.">
 
@@ -34,19 +34,27 @@ When the network goes down, the knowledge you need most is exactly the knowledge
 
 This library holds those answers **before** you need them. It is written for a frightened, tired person reading by candlelight on a phone at 5% battery: short sentences, exact numbers, the deadly mistakes first.
 
-## Get it in 5 minutes (do this today)
+## Download
 
-| You have | Do this | Battery life |
-|---|---|---|
-| 🖨️ A printer | Print [`just-in-case-core.pdf`](../../releases/latest): the critical articles as a book with page numbers and an index. Add the [pocket cards](../../releases/latest) (`just-in-case-cards.pdf`): cut, laminate, keep in the kitchen and car. [Printing tips](hardware/print/) | forever |
-| 📱 A phone | Open the [website](https://sudokhaled.github.io/just-in-case/) once and add it to your home screen: it then works offline like an app. Or save [`just-in-case.html`](../../releases/latest): one file, any browser, with search. | 10–30 h of reading |
-| 📖 A Kindle | Copy [`just-in-case.azw3`](../../releases/latest) to it over USB. [Kindle guide](hardware/kindle/) | weeks |
-| 📚 Kobo / other e-reader | Copy [`just-in-case.epub`](../../releases/latest). | weeks |
-| 🎵 Cheap MP3 player with text mode | Copy the `mp3` folder from [`just-in-case-mp3.zip`](../../releases/latest): one small ASCII file per topic. | days |
-| 🔌 An ESP32 board ($2–8) | Turn it into a WiFi library hotspot for everyone nearby: plug it into a computer and click **[Install](https://sudokhaled.github.io/just-in-case/flash/)**. No programming. [ESP32 guide](hardware/esp32/) | 1.5–3 days on a 10,000 mAh power bank |
-| 🍓 A Raspberry Pi | The same hotspot, and it can rebuild the library itself. [Pi guide](hardware/raspberry-pi/) | 1–2 days (Pi Zero 2 W) |
+Free, and no Git, account or technical skills needed: click the file for your device and it downloads straight away. Do this today, while you still have internet.
 
-Then **share it**. Send the file to your family group chat. Give a printed copy to your neighbor. In a disaster, the people around you matter most. And ⭐ **star this repo** so more people find it before they need it.
+> [!TIP]
+> Ignore GitHub's green **Code** button. It gives you the source files for programmers, not the library.
+
+| You have | Click to download | Then | Battery life |
+|---|---|---|---|
+| 📱 A phone | **[Open the website](https://sudokhaled.github.io/just-in-case/)** | Tap **Share > Add to Home Screen** (iPhone, Safari) or **⋮ > Add to Home screen** (Android, Chrome). It then works offline, like an app. | 10–30 h of reading |
+| 💻 A computer | **[The library in one file](https://github.com/sudokhaled/just-in-case/releases/latest/download/just-in-case.html)** (1.5 MB) | Open it from your Downloads folder. It works in any browser with no internet, and has search. Also works on most phones. | hours |
+| 🖨️ A printer | **[Core book (PDF)](https://github.com/sudokhaled/just-in-case/releases/latest/download/just-in-case-core.pdf)** and **[pocket cards (PDF)](https://github.com/sudokhaled/just-in-case/releases/latest/download/just-in-case-cards.pdf)** | Print. Cut out the cards, laminate them, and keep them in the kitchen and car. [Printing tips](hardware/print/) | forever |
+| 📖 A Kindle | **[E-book (EPUB)](https://github.com/sudokhaled/just-in-case/releases/latest/download/just-in-case.epub)** (0.5 MB) | Upload it on Amazon's [Send to Kindle](https://www.amazon.com/sendtokindle) page. No cable? This is the easiest way. Or copy the **[Kindle file (AZW3)](https://github.com/sudokhaled/just-in-case/releases/latest/download/just-in-case.azw3)** over USB. [Kindle guide](hardware/kindle/) | weeks |
+| 📚 Kobo, PocketBook or a phone book app | **[E-book (EPUB)](https://github.com/sudokhaled/just-in-case/releases/latest/download/just-in-case.epub)** (0.5 MB) | Copy it to the e-reader over USB, or open it in Apple Books or Google Play Books. | weeks |
+| 🎵 A cheap MP3 player with text mode | **[MP3-player files (ZIP)](https://github.com/sudokhaled/just-in-case/releases/latest/download/just-in-case-mp3.zip)** | Unzip it, then copy the `mp3` folder to the player: one small text file per topic. | days |
+| 🔌 An ESP32 board ($2–8) | **[Installer page](https://sudokhaled.github.io/just-in-case/flash/)** | Plug the board into a computer, open the page in Chrome or Edge and click **Install**. No programming. It becomes a WiFi library for everyone nearby. [ESP32 guide](hardware/esp32/) | 1.5–3 days on a 10,000 mAh power bank |
+| 🍓 A Raspberry Pi | **[Pi guide](hardware/raspberry-pi/)** | The same WiFi hotspot, and it can rebuild the library itself. | 1–2 days (Pi Zero 2 W) |
+
+Every file, with checksums: [all downloads](../../releases/latest).
+
+Then **share it**. Send the file to your family group chat, or send the [website link](https://sudokhaled.github.io/just-in-case/) to anyone who is not technical: they can read the library or save it to their phone from there, with no GitHub page in the way. Give a printed copy to your neighbor. In a disaster, the people around you matter most. And ⭐ **star this repo** so more people find it before they need it.
 
 ## The $3 library hotspot
 
