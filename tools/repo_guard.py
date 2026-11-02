@@ -157,8 +157,7 @@ def apply():
     branch = info["default_branch"]
     print("Protecting %s as %s" % (repo, me["login"]))
 
-    runs = gh("repos/%s/commits/%s/check-runs?check_name=build" % (repo, branch), missing_ok=True) or {}
-    app_id = next((r["app"]["id"] for r in runs.get("check_runs", []) if r.get("app")), None)
+    app_id = (gh("apps/github-actions", missing_ok=True) or {}).get("id")  # public, so no Checks permission needed
     existing = {r["name"]: r["id"] for r in gh("repos/%s/rulesets" % repo) or []}
     for rs in rulesets(app_id):
         if rs["name"] in existing:
